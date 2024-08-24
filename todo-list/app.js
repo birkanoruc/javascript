@@ -4,7 +4,6 @@ const createTodoSection = document.getElementById("create-todo-section");
 const createTodoForm = document.getElementById("create-todo-form");
 const todoInput = document.getElementById("todo");
 
-// const todoListSection = document.getElementById("todo-list-section");
 const searchTodoInput = document.getElementById("search-todo");
 const todoList = document.getElementById("todo-list");
 const deleteTodoListButton = document.getElementById("delete-todo-list");

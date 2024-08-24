@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Movie Introduction</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+  <main class="container">
+    <section class="mt-4" id="create-movie-section">
+      <div class="card row">
+        <div class="card-header">
+          <h2 class="card-title h5" id="create-movie-title">Film Ekle</h2>
+        </div>
+        <div class="card-body">
+          <form id="create-movie-form" name="create-movie-form">
+            <div class="form-row">
+              <div class="form-group col-md-6">
+                <input class="form-control" type="text" name="movie-title" id="movie-title"
+                  placeholder="Filmin adını yazınız...">
+              </div>
+              <div class="form-group col-md-6">
+                <input class="form-control" type="text" name="movie-director" id="movie-director"
+                  placeholder="Yönetmenin adını yazınız...">
+              </div>
+            </div>
+            <div class="input-group">
+              <input class="form-control" type="url" name="movie-url" id="movie-url"
+                placeholder="Filmin afiş linkini giriniz...">
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-primary">Film Ekle</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="mt-4">
+      <div class="card row">
+        <div class="card-header">
+          <h2 class="card-title h5" id="list-movie-title">Film Listesi</h2>
+        </div>
+        <div class="card-body">
+          <table class="table table-dark">
+            <thead>
+              <tr>
+                <th scope="col">Film Afişi</th>
+                <th scope="col">Film İsmi</th>
+                <th scope="col">Yönetmen</th>
+
+              </tr>
+            </thead>
+            <tbody id="movie-list">
+            </tbody>
+          </table>
+          <hr>
+          <a id="delete-movie-list" class="btn btn-danger" href="#">Tüm Filmleri Temizleyin</a>
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+  <script src="ui.js"></script>
+  <script src="storage.js"></script>
+  <script src="movie.js"></script>
+  <script src="app.js"></script>
+
+</body>
+
+</html>
