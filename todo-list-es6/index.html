@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Todo List - ES6</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+</head>
+
+<body>
+    <main class="container">
+
+        <section class="mt-4" id="create-todo-section">
+            <div class="card row">
+                <div class="card-header">
+                    <h2 class="card-title h5" id="create-todo-title">Görev Ekle</h2>
+                </div>
+                <div class="card-body">
+                    <form id="create-todo-form" name="create-todo-form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="todo" id="todo"
+                                placeholder="Bir görev yazın...">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-primary">Görev Ekle</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-4" id="todo-list-section">
+            <div class="card row">
+                <div class="card-header">
+                    <h2 class="card-title h5" id="todo-list-title">Görev Listesi</h2>
+                </div>
+                <div class="card-body">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="search-todo" id="search-todo"
+                            placeholder="Görevlerde arayın...">
+                    </div>
+                    <hr>
+                    <ul class="list-group" id="todo-list"></ul>
+                    <hr>
+                    <a class="btn btn-danger" href="javascript:void(0);" id="delete-todo-list">Tüm Görevler Temizle</a>
+                </div>
+        </section>
+    </main>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="ui.js"></script>
+    <script src="storage.js"></script>
+    <script src="todo.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>

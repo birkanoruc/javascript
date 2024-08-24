@@ -1,9 +1,4 @@
 class UI {
-    constructor() {
-        this.movieList = document.getElementById("movie-list");
-        this.createMovieSection = document.getElementById("create-movie-section");
-    }
-
     static clearInputs(inputs) {
         inputs.forEach(input => {
             input.value = "";
@@ -15,7 +10,6 @@ class UI {
         alertItemDiv.className = `alert alert-${type} mt-4`;
         alertItemDiv.appendChild(document.createTextNode(message));
 
-        // Statik metotlarda `this` kullanımı yok, değişkenleri yeniden seçiyoruz
         const createMovieSection = document.getElementById("create-movie-section");
         createMovieSection.appendChild(alertItemDiv);
 
