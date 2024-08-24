@@ -36,9 +36,9 @@ document.querySelector('.run').addEventListener('click', function () {
         changeBackgroundColor("body", "#222");
 
     } else if (guess === secretNumber) {
-        score += 10;
+        score += 5;
         changeTextContent(".score", "Skor: " + score);
-        changeTextContent(".message", "Doğru tahmin! 10 puan kazandınız!");
+        changeTextContent(".message", "Doğru tahmin! 5 puan kazandınız!");
         changeBackgroundColor("body", "#60b347");
         changeTextContent(".number", secretNumber);
         changeTextContent(".clue", "");
@@ -47,20 +47,21 @@ document.querySelector('.run').addEventListener('click', function () {
         secretNumber = Math.trunc(Math.random() * 20) + 1;
 
     } else if (guess !== secretNumber) {
-        score -= 10;
+        score -= 5;
         changeTextContent(".score", "Skor: " + score);
-        changeTextContent(".message", "Yanlış tahmin! 10 puan kaybettiniz!");
+        changeTextContent(".message", "Yanlış tahmin! 5 puan kaybettiniz!");
         changeBackgroundColor("body", "#fb3b34");
         changeTextContent(".number", "?");
         changeTextContent(".clue", getClue(guess, secretNumber));
         changeValue(".guess", "");
 
-        if (score < 10) {
+        if (score < 5) {
             score = 20;
             changeTextContent(".score", "Skor: " + score);
             changeTextContent(".message", "Oyunu bitti. Kaybettin!");
             changeBackgroundColor("body", "#222");
             changeTextContent(".clue", "");
+            changeTextContent(".number", secretNumber);
             changeValue(".guess", "");
             secretNumber = Math.trunc(Math.random() * 20) + 1;
         }
