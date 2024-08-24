@@ -13,7 +13,7 @@
 <body>
     <main class="container">
 
-        <section class="mt-4">
+        <section class="mt-4" id="create-todo-section">
             <div class="card row">
                 <div class="card-header">
                     <h2 class="h5" id="create-todo-title">Görev Ekle</h2>
@@ -22,7 +22,7 @@
                     <form id="create-todo-form" name="create-todo-form">
                         <div class="input-group">
                             <input type="text" class="form-control" name="todo" id="todo"
-                                placeholder="Bir görev yazın..." required>
+                                placeholder="Bir görev yazın...">
                             <div class="input-group-append">
                                 <button type="submit" class="btn btn-primary">Görev Ekle</button>
                             </div>
@@ -32,7 +32,7 @@
             </div>
         </section>
 
-        <section class="mt-4">
+        <section class="mt-4" id="todo-list-section">
             <div class="card row">
                 <div class="card-header">
                     <h2 class="h5" id="todo-list-title">Görev Listesi</h2>
@@ -43,12 +43,7 @@
                             placeholder="Görevlerde arayın...">
                     </div>
                     <hr>
-                    <ul class="list-group" id="todo-list">
-                        <li class="list-group-item d-flex justify-content-between">
-                            Görev Adı
-                            <a href="#" class="delete-item"> <i class="fa fa-remove text-danger"></i></a>
-                        </li>
-                    </ul>
+                    <ul class="list-group" id="todo-list"></ul>
                     <hr>
                     <a class="btn btn-danger" href="javascript:void(0);" id="delete-todo-list">Tüm Görevler Temizle</a>
                 </div>
