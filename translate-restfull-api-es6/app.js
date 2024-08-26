@@ -20,8 +20,7 @@ function translateWord(e) {
         if (status !== 200) {
             console.log(status, response);
         } else {
-            console.log(response);
-            ui.displayTranslate(response);
+            ui.displayTranslate(response); // Çeviri sonucunu göster
         }
     });
 }
