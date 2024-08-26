@@ -1,6 +1,5 @@
 'use strict';
 
-const createTodoSection = document.getElementById("create-todo-section");
 const createTodoForm = document.getElementById("create-todo-form");
 const todoInput = document.getElementById("todo");
 
