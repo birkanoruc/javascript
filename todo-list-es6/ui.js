@@ -7,6 +7,8 @@ class UI {
     }
 
     static showAlert(type, message) {
+        const createTodoSection = document.getElementById("create-todo-section");
+
         const alertItemDiv = document.createElement("div");
         alertItemDiv.className = `alert alert-${type} mt-4`;
         alertItemDiv.appendChild(document.createTextNode(message));

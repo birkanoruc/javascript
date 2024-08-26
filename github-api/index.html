@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <title>Github API</title>
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="mt-4" id="search">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title h5">Github Kullanıcılarını Arayın</h2>
+                    <p>Bir kullanıcı adı girin ve kullanıcının bilgilerine ulaşın!</p>
+                </div>
+                <div class="card-body">
+                    <form id="github-form">
+                        <div class="input-group">
+                            <input type="text" class="form-control" name="github-name" id="github-name"
+                                placeholder="Bir kullanıcı adı yazın...">
+                            <div class="input-group-append">
+                                <button type="submit" class="btn btn-primary">Ara</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <section class="mt-4" id="profile">
+        </section>
+
+        <section class="mt-4" id="repos">
+        </section>
+
+        <section class="mt-4 mb-4" id="lastSearch">
+            <div class="card">
+                <div class="card-header">
+                    <h2 class="card-title h5">Son Aramalar</h2>
+                </div>
+                <div class="card-body">
+                    <ul class="list-group" id="last-users">
+
+                    </ul>
+                    <hr>
+                    <button class="btn btn-danger" id="clear-last-users">Son Arananları Temizle</button>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <script src="github.js"></script>
+    <script src="storage.js"></script>
+    <script src="ui.js"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
