@@ -1,0 +1,70 @@
+{
+  "employees": [
+    {
+      "id": "5512",
+      "name": "Employee Test",
+      "department": "Bilgi İşlem",
+      "salary": 100
+    },
+    {
+      "name": "Deneme",
+      "department": "deneme s",
+      "salary": 1004,
+      "id": "3d52"
+    },
+    {
+      "id": "d059",
+      "name": "Employee Test",
+      "department": "Bilgi İşlem",
+      "salary": 100
+    },
+    {
+      "id": "413c",
+      "name": "Employee Test",
+      "department": "Bilgi İşlem",
+      "salary": 100
+    },
+    {
+      "name": "Employee Test2",
+      "department": "Bilgi İşlem2",
+      "salary": 1002,
+      "id": "b100"
+    },
+    {
+      "name": "dene",
+      "department": "me",
+      "salary": 100,
+      "id": "8c1f"
+    },
+    {
+      "id": "cac9",
+      "name": "t",
+      "department": "s",
+      "salary": 1
+    },
+    {
+      "id": "1ae1",
+      "name": "Employee 2",
+      "department": "Muhasebe",
+      "salary": 100
+    },
+    {
+      "name": "Birkan O",
+      "department": "Muhasebe2",
+      "salary": 100,
+      "id": "2ea6"
+    },
+    {
+      "id": "1279",
+      "name": "Birkan",
+      "department": "Muhasebe",
+      "salary": 222
+    },
+    {
+      "name": "test",
+      "department": "Muhasebe2",
+      "salary": 222,
+      "id": "d0d0"
+    }
+  ]
+}
