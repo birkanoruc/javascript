@@ -1,0 +1,16 @@
+{
+  "name": "quenstion-answer-rest-api-express",
+  "version": "1.0.0",
+  "description": "Express - Quenstion & Answer Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "express",
+    "rest",
+    "api"
+  ],
+  "author": "birkanoruc",
+  "license": "MIT"
+}
