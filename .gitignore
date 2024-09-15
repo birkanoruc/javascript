@@ -4,4 +4,5 @@ express-fundamentals/node_modules/
 express-fundamentals/package-lock.json
 quenstion-answer-rest-api-express/node_modules/
 quenstion-answer-rest-api-express/package-lock.json
+quenstion-answer-rest-api-express/config/env/config.env
 .DS_Store
