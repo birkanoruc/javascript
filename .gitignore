@@ -6,4 +6,5 @@ quenstion-answer-rest-api-express/node_modules/
 quenstion-answer-rest-api-express/package-lock.json
 quenstion-answer-rest-api-express/config/env/config.env
 react-intro/node_modules
+react-redux-intro/node_modules
 .DS_Store
