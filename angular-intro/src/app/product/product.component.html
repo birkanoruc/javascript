@@ -1,0 +1,29 @@
+<section class="m-4">
+  <h5 *ngIf="products; else noProduct" class="alert alert-primary">{{ title }}</h5>
+  <ng-template #noProduct>
+    <div class="alert alert-primary" role="alert">
+      Bu kategoride ürün bulunamadı!
+    </div>
+  </ng-template>
+
+  <div class="mb-3">
+    <input class="form-control" placeholder="Product search..." [(ngModel)]="filterText">
+    <ng-content *ngIf="filterText">
+      <small><strong>{{ filterText }} arama sonuçları listeleniyor...</strong></small>
+    </ng-content>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-4 g-4">
+    <div class="col" *ngFor="let product of products | productFilter:filterText">
+      <div class="card">
+        <img src="{{ product.imageUrl }}" class="card-img-top" alt="{{ product.productName }}">
+        <div class="card-body">
+          <h5 class="card-title">{{ product.productName }}</h5>
+          <p class="card-text">{{ product.quantityPerUnit }}</p>
+          <p class="card-text text-danger fw-bold">{{ product.unitPrice | currency:'USD':"symbol":'1.2-2' }}</p>
+          <a (click)="addToCart(product)" class="btn btn-primary">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

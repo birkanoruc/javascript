@@ -1,0 +1,139 @@
+<section class="m-4">
+  <div class="card">
+    <div class="card-header"><h3>Add New Product - Classic Form</h3></div>
+    <div class="card-body">
+      <form #productForm="ngForm" (ngSubmit)="add(productForm)">
+        <div class="form-group mb-1">
+          <label for="productName">Product Name</label>
+          <input
+            type="text"
+            id="productName"
+            name="productName"
+            [(ngModel)]="model.productName"
+            #productName="ngModel"
+            required
+            class="form-control"
+          />
+          <!-- Hata mesajı -->
+          <div
+            *ngIf="productName.invalid && productName.dirty"
+            class="alert alert-danger mt-2"
+          >
+            Product name is required
+          </div>
+        </div>
+
+        <div class="form-group mb-1">
+          <label for="unitPrice">Unit Price</label>
+          <input
+            type="number"
+            id="unitPrice"
+            name="unitPrice"
+            [(ngModel)]="model.unitPrice"
+            #unitPrice="ngModel"
+            required
+            class="form-control"
+          />
+          <!-- Hata mesajı -->
+          <div
+            *ngIf="unitPrice.invalid && unitPrice.dirty"
+            class="alert alert-danger mt-2"
+          >
+            Unit price is required
+          </div>
+        </div>
+
+        <div class="form-group mb-1">
+          <label for="categoryId">Category</label>
+          <select
+            id="categoryId"
+            name="categoryId"
+            [(ngModel)]="model.categoryId"
+            #categoryId="ngModel"
+            required
+            class="form-control"
+          >
+            <option *ngFor="let category of categories" [value]="category.id">
+              {{ category.categoryName }}
+            </option>
+          </select>
+          <!-- Hata mesajı -->
+          <div
+            *ngIf="categoryId.invalid && categoryId.touched"
+            class="alert alert-danger mt-2"
+          >
+            Category is required
+          </div>
+        </div>
+
+        <div class="form-group mb-1">
+          <label for="quantityPerUnit">Quantity Per Unit</label>
+          <input
+            type="text"
+            id="quantityPerUnit"
+            name="quantityPerUnit"
+            [(ngModel)]="model.quantityPerUnit"
+            #quantityPerUnit="ngModel"
+            required
+            class="form-control"
+          />
+          <!-- Hata mesajı -->
+          <div
+            *ngIf="quantityPerUnit.invalid && quantityPerUnit.dirty"
+            class="alert alert-danger mt-2"
+          >
+            Quantity per unit is required
+          </div>
+        </div>
+
+        <div class="form-group mb-1">
+          <label for="imageUrl">Image Url</label>
+          <input
+            type="text"
+            id="imageUrl"
+            name="imageUrl"
+            [(ngModel)]="model.imageUrl"
+            #imageUrl="ngModel"
+            required
+            class="form-control"
+          />
+          <!-- Hata mesajı -->
+          <div
+            *ngIf="imageUrl.invalid && imageUrl.dirty"
+            class="alert alert-danger mt-2"
+          >
+            Image url is required
+          </div>
+        </div>
+
+        <div class="form-group mb-1">
+          <label for="unitsInStock">Units in Stock</label>
+          <input
+            type="number"
+            id="unitsInStock"
+            name="unitsInStock"
+            [(ngModel)]="model.unitsInStock"
+            #unitsInStock="ngModel"
+            required
+            class="form-control"
+          />
+          <!-- Hata mesajı -->
+          <div
+            *ngIf="unitsInStock.invalid && unitsInStock.dirty"
+            class="alert alert-danger mt-2"
+          >
+            Units in stock is required
+          </div>
+        </div>
+
+        <button
+          type="submit"
+          [disabled]="productForm.invalid"
+          class="btn btn-primary mb-1 mt-2"
+        >
+          Add Product
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
