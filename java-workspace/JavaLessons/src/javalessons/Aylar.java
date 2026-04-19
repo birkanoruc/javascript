@@ -1,0 +1,5 @@
+package javalessons;
+
+public enum Aylar {
+OCAK,SUBAT,MART,NİSAN,MAYIS,HAZİRAN,TEMMUZ,AGUSTOS,EYLUL,EKIM,KASIM,ARALIK
+}
